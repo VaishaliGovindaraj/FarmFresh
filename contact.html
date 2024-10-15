@@ -1,0 +1,71 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+ </head>
+ <body>
+    <header class="header">
+        <h1 class="title"> Forms</h1>
+    </header>
+
+    <section class="main_content">
+        <form action="mailto: vaishali.govindaraj28@gmail.com" enctype="text/plain" method="POST" class="user_form">
+            <fieldset>
+                <legend> Personal Information </legend>
+
+               <label for="user_name"> Please Enter your name: </label>
+               <input type="text" name="user_name" id="user_name" placeholder="Enter your name" required >
+
+               <label for="user_age"> Please Enter your age: </label>
+               <input type="text" name="user_age" id="user_age" placeholder="Enter your age" required>
+            </fieldset>
+
+            <fieldset>
+                <legend> Your Message</legend>
+                <label for="Enter your message"> Enter your message </label>
+                <textarea id="user-message"  name="user_message" class="user_message"> </textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend> Options</legend>
+                <label for="user_priority">Is your message important?</label>
+                <input name="user_priority" id="user_priority" type="checkbox"  value="important message">
+
+                <label for="user-tax"> Do you pay your tax?</label>
+                <input name="user_priority" id="user_priority" type="checkbox"  value="I pay tax">
+
+                <label for="user-country">where do you live?</label>
+
+                <input type="radio" name="user-country" id="india" value="India">
+                <label for="India" class="radio_label">India</label>
+
+                <input type="radio" name="user-country" id="user_country" value="Sweden">
+                <label for="Sweden" class="radio_label">Sweden</label>
+
+                <input type="radio" name="user-country" id="user_country" value="Germany">
+                <label for="Germany" class="radio_label">Germany</label>
+
+                <label for="gender">Choose your gender</label>
+                <select id="gender" name="gender">
+                    <option value="female"> Female</option>
+                    <option value="male">Male</option>
+                    <option value="non-binary">Non-binary</option>
+                    <option value="Not to disclose">Not wish to disclose</option>
+                </select>
+
+            </fieldset>
+
+
+
+           <button> Submit Form!</button>
+        </form>
+
+    </section>
+
+    <footer class="footer">
+        <p> Coyright @2024</p>
+    </footer>
+ </body>
+ </html>

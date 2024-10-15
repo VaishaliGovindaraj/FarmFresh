@@ -1,0 +1,280 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    min-height: 100vh;
+}
+
+.background_image {
+    height: 100%;
+    background-image: url(../images/food_bg_image.jpeg);
+    background-size: cover;
+    background-position: top,right;
+    z-index: -1;
+}
+
+.logo{
+    display:none;
+}
+
+.nav_menu {
+    display: flex;
+    justify-content: space-around;
+    color:antiquewhite;
+    background-color: transparent;
+    opacity:0.80;
+}
+
+.nav_menu a{
+    color: #fff;
+    background-color: #2d2c2b;
+}
+
+.hero_content {
+    background-color: transparent;
+    color: #fff;
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.318), 0 0 25px rgb(10, 18, 59), 0 0 5px rgba(111, 230, 141, 0.575);
+}
+
+.hero_main_content {
+    justify-content: center;
+    align-content: center;
+    font-size: 1.5rem;
+}
+
+.title {
+    padding: 16px;
+    font-size: 6vw;
+    font-weight: 550;
+    filter: none;
+    z-index: 60;
+    align-self: self-start;
+    background-color: #2d2c2b;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.318), 0 0 25px rgb(215, 59, 28), 0 0 5px rgba(174, 186, 177, 0.575);
+}
+
+.message {
+    text-shadow: 0 0 10px #FFD700, 
+    0 0 20px #FFA500, 
+    0 0 30px #FF6347;
+    margin-left: 0px;
+    font-size: 3vw;
+    font-weight: 400;
+    font-weight: bolder;
+    z-index: 40;
+    border-radius: 20px;
+    color:#fff;
+    background-color: #2d2c2b;
+}
+
+.mindset_message {
+    background-color: #f4f3ee;
+    color: #b0120f;
+    padding: 16px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.mindset_segment {
+    background-color: #f4f3ee;
+    color: #b0120f;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    padding: 32px;
+    gap: 16px;
+}
+
+.mindset_segment p {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.mindset_segment span {
+    display:none;
+}
+
+.places_main_content {
+    background-color: #f4f3ee;
+    padding: 32px;
+    flex: 1 0 auto;
+    color: #b0120f;
+}
+
+.places_text {
+    padding: 0 0 32px 0;
+    font-size: larger;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.places_grid_images {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 16px;
+}
+
+.places_city {
+    position: relative;
+}
+
+.places_city img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+
+.footer {
+    background-color: #fff;
+    color: #b0120f;
+    padding: 16px;
+    text-align: center;
+    font-size: 1.25rem;
+
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .background_image {
+        height: 100%;
+        background-image: url(../images/pexels-food_bg.jpeg);
+        background-size: cover;
+        z-index: 0;
+        animation : bg_image_change 15s linear infinite;
+    }
+
+
+    @keyframes bg_image_change{
+
+        15%{
+            background-image: url("../images/refresh-hero-home.png");
+            animation-delay: 10s;
+        }
+
+        30%{
+            background-image: url("../images/food_bgimage.jpg");
+            animation-delay: 30s;
+        }
+
+        60%{
+            background-image: url("../images/Media_Query_Mobile/Home_Background/bg_image_home.jpeg");
+            animation-delay: 50s;
+        }
+
+        80%{
+            background-image: url("../images/pexels-food_bg.jpeg");
+            animation-delay: 50s;
+        }
+
+        100%{
+            background-image:url("../images/pexels-food_bg.jpeg");
+            animation-delay: 30s;
+        }
+    }
+
+    .menu_icon {
+        display: none;
+    }
+
+    .title {
+        padding: 32px;
+        font-size: 6vw;
+        font-weight: 550;
+        border-radius: 10px;
+        z-index: 40;
+        text-align: center;
+        background-color:transparent;
+    }
+
+    .message {
+        color: #fff;
+        background-color: #f46636;
+        margin-left: 35px;
+        font-size: 3vw;
+        font-weight: 300;
+        font-weight: bolder;
+        z-index: 40;
+        border-radius: 20px;
+    }
+
+    .mindset_segment p {
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+    
+    .mindset_segment span {
+        display:inline;
+        font-weight: bold;
+    }
+
+    .logo{
+        display:inline;
+    }
+
+    .nav_menu {
+        display: flex;
+        background-color: #fff;
+        justify-content: space-around;
+        height: 10%;
+        color: #b0120f;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav_menu a {
+        color: #b0120f;
+        font-weight: bolder;
+        background-color: transparent;
+    }
+
+    .nav_menu a:hover {
+        background-color: #e8dba1;
+    }
+
+    .places_city::before {
+        content: attr(data-city);
+        position: absolute;
+        bottom: 0;
+        left: 70px;
+        background-color: rgba(54, 54, 54, 0.5);
+        padding: 5px;
+        text-align: center;
+        font-size: medium;
+        border-radius: 10%;
+        color: #fff;
+        font-weight: bold;
+        z-index: 40;
+    }
+
+    .footer {
+        background-color: #fff;
+        color: #b0120f;
+        padding: 16px;
+        text-align: center;
+        font-size: 1.5rem;
+    
+    }
+    
+    .footer_content {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px;
+    }
+
+}
