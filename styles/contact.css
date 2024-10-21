@@ -89,7 +89,7 @@ body {
     height: 100%;
     border-radius: 25px;
     padding: 16px;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 label {
@@ -115,7 +115,7 @@ fieldset {
 }
 
 .button{
-    font-size: 2rem;
+    font-size: 1.25rem;
 }
 
 .footer {
@@ -215,11 +215,11 @@ fieldset {
         height: 100%;
         border-radius: 25px;
         padding: 16px;
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .button{
-        font-size:1.75rem;
+        font-size:1.15rem;
     }
 
     .footer {

@@ -11,7 +11,7 @@
     font-size: 1.45rem;
     color: rgb(101, 6, 226);
     background-image: linear-gradient(45deg, #D3959B, #BFE6BA);
-    padding: 16px;
+    padding: 32px;
 }
 
 .recipies_intro {
@@ -26,7 +26,6 @@
     font-weight: bold;
     color: rgb(101, 6, 226);
     text-align: center;
-
 }
 
 .weekly_special_section {
@@ -40,7 +39,6 @@
     flex-direction: column;
 }
 
-
 .weekly_special_content img {
     display: flex;
     width: 100%;
@@ -51,7 +49,6 @@
 .image_container {
     position: relative;
 }
-
 
 .image_text {
     position: absolute;
@@ -157,6 +154,20 @@
         background-color: #ffd517;
     }
 
+    .tagline {
+        font-size: 1.75rem;
+        color: rgb(101, 6, 226);
+        background-image: linear-gradient(45deg, #D3959B, #BFE6BA);
+        padding: 40px;
+    }
+
+    .section_header {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: rgb(101, 6, 226);
+        text-align: center;
+        padding:16px;
+    }
 
     .weekly_special_section {
         position: relative;
