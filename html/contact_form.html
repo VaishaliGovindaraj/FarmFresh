@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact</title>
+    <link rel="stylesheet" href="../styles/contact.css">
+</head>
+
+<body>
+    <div class="background_image">
+        <nav class="nav_menu">
+            <div class="logo">
+                <img src="../images/Farm_fresh_logo.png" width="120px" height="95px">
+            </div>
+            <a href="../index.html" target="_self">Home</a>
+            <a href="./products.html" target="__blank">Products</a>
+            <a href="./recipies.html" target="__blank">Recipies</a>
+            <a href="./contact_form.html" target="__blank">Contact</a>
+        </nav>
+
+        <section class="hero_content">
+            <div class="hero_main_content">
+                <h1 class="title"> FARM FRESH</h1>
+                <span class="message">Your order is minutes from your door</span>
+            </div>
+        </section>
+    </div>
+
+    <section class="main_content">
+        <form action="mailto: vaishali.govindaraj28@gmail.com" enctype="text/plain" method="POST" class="user_form">
+            <fieldset>
+                <legend> Your message for us🥗</legend>
+
+                <label for="user_name"> Please Enter your name: </label>
+                <input type="text" name="user_name" id="user_name" class="user_name" placeholder="Enter your name" required>
+
+                <label for="user_location"> Please Enter your location: </label>
+                <input type="text" name="user_location" id="user_location" class="user_location" placeholder="Enter your location" required>
+            </fieldset>
+
+            <fieldset>
+                <legend> Your Message</legend>
+                <label for="Enter your message"> Enter your message </label>
+                <textarea id="user-message" name="user_message" class="user_message"> </textarea>
+            </fieldset>
+            <button class="button"> Submit Form!</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <img src="../images/social_media_icon/copyright.png" alt="copyright_icon" height="auto" width="2%">
+        Copyright 2024
+        <div class="footer_content">
+            <div>Cutomer-Service</div>
+            <div>Career</div>
+            <div>Home-Delivery</div>
+            <div>About-Us</div>
+        </div>
+        <div class="social_media">
+            Follow us on social media
+            <img src="../images/social_media_icon/facebook.png" alt="facebook_icon" height="auto" width="2%">
+            <img src="../images/social_media_icon/instagram.png" alt="instagram_icon" height="auto" width="2%">
+            <img src="../images/social_media_icon/whatsapp.png" alt="whatsapp_icon" height="auto" width="2%">
+        </div>
+    </footer>
+
+</body>
+
+</html>

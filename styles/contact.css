@@ -1,0 +1,348 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    min-height: 100vh;
+}
+
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(45deg, #D3959B, #BFE6BA);
+}
+
+.background_image {
+    height: 100%;
+    background-image: url(../images/refresh-hero-home.png);
+    background-size: cover;
+    background-position: top, right;
+    z-index: -1;
+}
+
+.logo {
+    display: none;
+}
+
+.nav_menu {
+    background-image: linear-gradient(45deg, #D3959B, #BFE6BA);
+    display: flex;
+    justify-content: space-around;
+    color: antiquewhite;
+    background-color: transparent;
+    opacity: 0.80;
+}
+
+.nav_menu a {
+    color: #2a2f74;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.hero_content {
+    background-color: transparent;
+    color: #fff;
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.318), 0 0 25px rgb(10, 18, 59), 0 0 5px rgba(111, 230, 141, 0.575);
+}
+
+.hero_main_content {
+    justify-content: center;
+    align-content: center;
+    font-size: 1.5rem;
+}
+
+.title {
+    padding: 16px;
+    font-size: 7vw;
+    font-weight: 550;
+    filter: none;
+    z-index: 60;
+    align-self: self-start;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.318), 0 0 25px rgb(215, 59, 28), 0 0 5px rgba(174, 186, 177, 0.575);
+}
+
+.message {
+    text-shadow: 0 0 10px #FFD700,
+        0 0 20px #FFA500,
+        0 0 30px #FF6347;
+    margin-left: 0px;
+    font-size: 4vw;
+    font-weight: 400;
+    font-weight: bolder;
+    z-index: 40;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.main_content {
+    background-color: #AED4E6;
+    flex-grow: 1;
+    padding: 8px;
+    background-image: linear-gradient(45deg, #BFE6BA, #D3959B);
+}
+
+.user_form {
+    height: 100%;
+    border-radius: 25px;
+    padding: 16px;
+    font-size: 2rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px 0;
+}
+
+
+.radio_label {
+    display: inline;
+}
+
+
+fieldset {
+    border-radius: 10px;
+}
+
+.user_name,
+.user_location,
+.user_message {
+    width: 80%;
+    padding: 16px;
+}
+
+.button{
+    font-size: 2rem;
+}
+
+.footer {
+    background-image: linear-gradient(45deg, #D3959B, #BFE6BA);
+    padding: 0;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (min-width:768px) {
+    body {
+        background-image: linear-gradient(90deg, #BFE6BA, #D3959B);
+        min-height: 100vh;
+    }
+
+    .background_image {
+        height: 40%;
+        background-image: url(../images/pexels-food_bg.jpeg);
+        background-size: cover;
+        z-index: 0;
+        animation: bg_image_change 15s linear infinite;
+    }
+
+    @keyframes bg_image_change {
+
+        15% {
+            background-image: url("../images/refresh-hero-home.png");
+        }
+
+        30% {
+            background-image: url("../images/food_bgimage.jpg");
+        }
+
+        60% {
+            background-image: url("../images/Media_Query_Mobile/Home_Background/bg_image_home.jpeg");
+        }
+
+        80% {
+            background-image: url("../images/pexels-food_bg.jpeg");
+        }
+
+        100% {
+            background-image: url("../images/pexels-food_bg.jpeg");
+        }
+    }
+
+    .logo {
+        display: inline;
+    }
+
+    .nav_menu {
+        display: flex;
+        background-image: linear-gradient(45deg, #D3959B, #BFE6BA);
+        justify-content: space-around;
+        height: 30%;
+        color: #b0120f;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav_menu a {
+        color: #b0120f;
+        font-weight: bolder;
+    }
+
+    .nav_menu a:hover {
+        background-color: #ffd517;
+    }
+
+    .title{
+        font-size: 2.5rem;
+    }
+
+    .message{
+        font-size: 1.75rem;
+    }
+
+
+    .main_content {
+        flex-grow: 1;
+    }
+
+    .user_form {
+        height: 100%;
+        border-radius: 25px;
+        padding: 16px;
+        font-size: 2rem;
+    }
+
+    .button{
+        font-size:1.75rem;
+    }
+
+    .footer {
+        background-color: #fff;
+        color: #b0120f;
+        text-align: center;
+        font-size: 1.25rem;
+        flex-grow: 0;
+        position: fixed;
+        bottom: 0;
+    }
+
+    .footer_content {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px;
+    }
+}
+
+@media screen and (min-width:2000px) {
+    body {
+        background-image: linear-gradient(90deg, #BFE6BA, #D3959B);
+        min-height: 100vh;
+    }
+
+    .logo {
+        display: inline;
+    }
+
+    .background_image {
+        height: 10%;
+        background-image: url(../images/pexels-food_bg.jpeg);
+        background-size: cover;
+        z-index: 0;
+        animation: bg_image_change 15s linear infinite;
+    }
+
+    @keyframes bg_image_change {
+
+        15% {
+            background-image: url("../images/refresh-hero-home.png");
+        }
+
+        30% {
+            background-image: url("../images/food_bgimage.jpg");
+        }
+
+        60% {
+            background-image: url("../images/Media_Query_Mobile/Home_Background/bg_image_home.jpeg");
+        }
+
+        80% {
+            background-image: url("../images/pexels-food_bg.jpeg");
+        }
+
+        100% {
+            background-image: url("../images/pexels-food_bg.jpeg");
+        }
+    }
+
+    .logo {
+        display: inline;
+    }
+
+    .nav_menu {
+        display: flex;
+        background-image: linear-gradient(45deg, #D3959B, #BFE6BA);
+        justify-content: space-around;
+        height: 30%;
+        color: #b0120f;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav_menu a {
+        color: #b0120f;
+        font-weight: bolder;
+    }
+
+    .nav_menu a:hover {
+        background-color: #ffd517;
+    }
+
+    .title{
+        font-size: 2.5rem;
+    }
+
+    .message{
+        font-size: 1.75rem;
+    }
+
+
+    .main_content {
+        flex-grow: 1;
+    }
+
+    .user_form {
+        height: 100%;
+        border-radius: 25px;
+        padding: 16px;
+        font-size: 1rem;
+    }
+
+    .button{
+        font-size:1rem;
+    }
+
+    .footer {
+        background-color: #fff;
+        color: #b0120f;
+        text-align: center;
+        font-size: 1.25rem;
+        flex-grow: 0;
+        position: fixed;
+        bottom: 0;
+    }
+
+    .footer_content {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px;
+    }
+}

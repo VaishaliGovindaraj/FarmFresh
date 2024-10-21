@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    min-height: 100vh;
+}
+
+body {
+    min-height: 100%;
+    background-image: linear-gradient(45deg, #D3959B, #BFE6BA);
+}
+
+.background_image {
+    height: 100%;
+    background-image: url(../images/refresh-hero-home.png);
+    background-size: cover;
+    background-position: top, right;
+    z-index: -1;
+}
+
+
+
+.nav_menu {
+    background-image: linear-gradient(45deg, #D3959B, #BFE6BA);
+    display: flex;
+    justify-content: space-around;
+    color: antiquewhite;
+    background-color: transparent;
+    opacity: 0.80;
+}
+
+.nav_menu a {
+    color: #2a2f74;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.hero_content {
+    background-color: transparent;
+    color: #fff;
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.318), 0 0 25px rgb(10, 18, 59), 0 0 5px rgba(111, 230, 141, 0.575);
+}
+
+.hero_main_content {
+    justify-content: center;
+    align-content: center;
+    font-size: 1.5rem;
+}
+
+.title {
+    padding: 16px;
+    font-size: 7vw;
+    font-weight: 550;
+    filter: none;
+    z-index: 60;
+    align-self: self-start;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.318), 0 0 25px rgb(215, 59, 28), 0 0 5px rgba(174, 186, 177, 0.575);
+}
+
+.message {
+    text-shadow: 0 0 10px #FFD700,
+        0 0 20px #FFA500,
+        0 0 30px #FF6347;
+    margin-left: 0px;
+    font-size: 4vw;
+    font-weight: 400;
+    font-weight: bolder;
+    z-index: 40;
+    border-radius: 20px;
+    color: #fff;
+}
