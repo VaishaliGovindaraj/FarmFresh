@@ -38,6 +38,13 @@ body {
     color: #2a2f74;
     font-size: 1.5rem;
     font-weight: bold;
+    text-decoration: none;
+}
+
+.active{
+    background-color : rgb(118, 212, 235);
+    border: 2px solid rgb(244, 240, 126);;
+    font-size: 1.5rem;;
 }
 
 .hero_content {
@@ -180,7 +187,7 @@ fieldset {
         display: flex;
         background-image: linear-gradient(45deg, #D3959B, #BFE6BA);
         justify-content: space-around;
-        height: 30%;
+        height: 10%;
         color: #b0120f;
         align-items: center;
         font-size: 1.5rem;
@@ -192,10 +199,13 @@ fieldset {
     .nav_menu a {
         color: #b0120f;
         font-weight: bolder;
+        /*background-color: transparent;*/
+        text-decoration: none;
+        padding: 8px;
     }
 
     .nav_menu a:hover {
-        background-color: #ffd517;
+        background-color: #e8dba1;
     }
 
     .title{
