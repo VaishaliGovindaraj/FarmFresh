@@ -126,7 +126,7 @@ fieldset {
 }
 
 .footer {
-    background-image: linear-gradient(45deg, #D3959B, #BFE6BA);
+    background-image: linear-gradient(45deg, #BFE6BA,#D3959B);
     padding: 0;
     text-align: center;
     font-size: 1rem;
@@ -137,7 +137,7 @@ fieldset {
 
 .footer_content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 0;
     margin: 0;
 }
@@ -236,7 +236,7 @@ fieldset {
         background-color: #fff;
         color: #b0120f;
         text-align: center;
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         flex-grow: 0;
         position: fixed;
         bottom: 0;
@@ -244,7 +244,7 @@ fieldset {
 
     .footer_content {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         padding: 8px;
     }
 }
@@ -301,7 +301,7 @@ fieldset {
         height: 30%;
         color: #b0120f;
         align-items: center;
-        font-size: 1.5rem;
+        font-size: 3rem;
         font-weight: bold;
         margin: 0;
         padding: 0;
@@ -333,18 +333,19 @@ fieldset {
         height: 100%;
         border-radius: 25px;
         padding: 16px;
-        font-size: 1rem;
+        font-size: 2rem;
     }
 
     .button{
-        font-size:1rem;
+        font-size:2rem;
     }
 
     .footer {
         background-color: #fff;
+        width: 100%;
         color: #b0120f;
         text-align: center;
-        font-size: 1.25rem;
+        font-size: 2rem;
         flex-grow: 0;
         position: fixed;
         bottom: 0;
@@ -352,7 +353,8 @@ fieldset {
 
     .footer_content {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         padding: 8px;
     }
 }
+
