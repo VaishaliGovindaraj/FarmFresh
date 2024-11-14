@@ -13,6 +13,10 @@ body {
     background-image: linear-gradient(45deg, #D3959B, #BFE6BA);
 }
 
+.logo {
+    display: none;
+}
+
 .background_image {
     height: 100%;
     background-image: url(../images/refresh-hero-home.png);
@@ -26,22 +30,22 @@ body {
     display: flex;
     justify-content: space-around;
     color: antiquewhite;
-   /* background-color: transparent;*/
+    /* background-color: transparent;*/
     opacity: 0.80;
 }
 
 .nav_menu a {
     color: #2a2f74;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     text-decoration: none;
-    padding:8px;
+    padding: 8px;
 }
 
-.active{
-    background-color : rgb(118, 212, 235);
-    border: 2px solid rgb(244, 240, 126);;
-    font-size: 1.5rem;;
+.active {
+    background-color: rgb(118, 212, 235);
+    border: 2px solid rgb(244, 240, 126);
+    font-size: 1.5rem;
 }
 
 .hero_content {
@@ -61,7 +65,7 @@ body {
 
 .title {
     padding: 16px;
-    font-size: 7vw;
+    font-size: 6vw;
     font-weight: 550;
     filter: none;
     z-index: 60;
@@ -80,6 +84,100 @@ body {
     z-index: 40;
     border-radius: 20px;
     color: #fff;
+}
+
+.footer {
+    background-image: linear-gradient(45deg, #D3959B, #BFE6BA);
+    color: #b0120f;
+    padding: 0px;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+
+
+
+@media screen and (min-width:390px) {
+
+    body {
+        min-height: 100%;
+        background-image: linear-gradient(45deg, #D3959B, #BFE6BA);
+    }
+
+    .nav_menu a {
+        color: #2a2f74;
+        font-size: 1.25rem;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 8px;
+    }
+
+    .active {
+        background-color: rgb(118, 212, 235);
+        border: 2px solid rgb(244, 240, 126);
+        font-size: 1.5rem;
+    }
+
+    .hero_content {
+        background-color: transparent;
+        color: #fff;
+        padding: 32px;
+        display: flex;
+        justify-content: center;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.318), 0 0 25px rgb(10, 18, 59), 0 0 5px rgba(111, 230, 141, 0.575);
+    }
+
+    .hero_main_content {
+        justify-content: center;
+        align-content: center;
+        font-size: 1.5rem;
+    }
+
+    .title {
+        padding: 16px;
+        font-size: 6vw;
+        font-weight: 550;
+        filter: none;
+        z-index: 60;
+        align-self:center;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.318), 0 0 25px rgb(215, 59, 28), 0 0 5px rgba(174, 186, 177, 0.575);
+    }
+
+    .message {
+        text-shadow: 0 0 10px #FFD700,
+            0 0 20px #FFA500,
+            0 0 30px #FF6347;
+        margin-left: 0px;
+        font-size: 4vw;
+        font-weight: 400;
+        font-weight: bolder;
+        z-index: 40;
+        border-radius: 20px;
+        color: #fff;
+    }
+
+    .footer {
+        background-image: linear-gradient(45deg, #D3959B, #BFE6BA);
+        color: #b0120f;
+        padding: 0px;
+        text-align: center;
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .footer_content {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -134,7 +232,7 @@ body {
 
     .title {
         padding: 32px;
-        font-size: 6vw;
+        font-size: 4vw;
         font-weight: 550;
         border-radius: 10px;
         z-index: 40;
@@ -178,4 +276,22 @@ body {
     .nav_menu a:hover {
         background-color: #e8dba1;
     }
+
+    .footer {
+        display:flex;
+        background-color: #fff;
+        color: #b0120f;
+        padding: 16px;
+        text-align: center;
+        font-size: 1.5rem;
+        background-image: linear-gradient(45deg, #BFE6BA, #D3959B);
+
+    }
+
+    .footer_content {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px;
+    }
+
 }

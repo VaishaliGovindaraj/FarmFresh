@@ -1,6 +1,4 @@
-.logo {
-    display: none;
-}
+
 
 .recipe_content_start {
     min-height: 100%;
@@ -162,18 +160,5 @@
         color: rgb(0, 0, 0);
     }
 
-    .footer {
-        background-image: linear-gradient(90deg, #D3959B, #BFE6BA);
-        color: #b0120f;
-        text-align: center;
-        font-size: 1.25rem;
-
-    }
-
-    .footer_content {
-        display: flex;
-        justify-content: space-between;
-        padding: 16px;
-    }
 
 }

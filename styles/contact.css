@@ -36,7 +36,7 @@ body {
 
 .nav_menu a {
     color: #2a2f74;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: bold;
     text-decoration: none;
 }
@@ -190,7 +190,7 @@ fieldset {
         height: 10%;
         color: #b0120f;
         align-items: center;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         font-weight: bold;
         margin: 0;
         padding: 0;
